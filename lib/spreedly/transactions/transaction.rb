@@ -34,6 +34,8 @@ module Spreedly
         return DeliverPaymentMethod.new(xml_doc)
       when 'Store'
         return Store.new(xml_doc)
+      when 'OffsiteAuthorization'
+        return OffsiteAuthorization.new(xml_doc)
       else
         Transaction.new(xml_doc)
       end
