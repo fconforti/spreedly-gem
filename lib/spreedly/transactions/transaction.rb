@@ -3,7 +3,7 @@ module Spreedly
 
   class Transaction < Model
 
-    field :state, :message
+    field :state, :message, :checkout_url
     field :succeeded, type: :boolean
 
     def self.new_from(xml_doc)
